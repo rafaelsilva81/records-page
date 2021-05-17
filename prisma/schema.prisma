@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id Int @id @default(autoincrement())
+  username String @unique
+  password String
+}
+
+model Musics {
+  id String @id @default(cuid())
+  video_id String @unique 
+  title String
+  date DateTime
+  thumbnail String?
+}
