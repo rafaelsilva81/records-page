@@ -16,11 +16,10 @@ model User {
   password String
 }
 
-model Musics {
+model Music {
   id String @id @default(cuid())
   video_id String @unique 
   title String
-  description String
   date DateTime
   thumbnail String?
 }
