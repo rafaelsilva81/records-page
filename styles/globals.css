@@ -9,9 +9,9 @@ body {
         @apply p-2 font-sans transition duration-300 rounded-md lg:px-4 md:mx-2 hover:text-primary;
     }   
     .btn {
-        @apply px-10 py-2 my-3 mr-3 text-lg font-bold text-gray-900 transition duration-300 rounded-2xl bg-amber-400 hover:bg-gray-900 hover:text-amber-400;
+        @apply text-sm p-2 font-bold text-gray-900 transition duration-300 md:text-lg md:px-10 md:py-2 md:my-3 md:mr-3 rounded-2xl bg-amber-400 hover:bg-gray-900 hover:text-amber-400;
     }
     .btn-outline {
-        @apply px-10 py-2 my-3 mr-3 text-lg font-bold border-4 text-white hover:text-amber-400 border-gray-900 hover:border-transparent transition duration-300 bg-transparent rounded-2xl hover:bg-gray-900
+        @apply text-sm p-2 md:px-10 md:py-2 md:my-3 md:mr-3 md:text-lg font-bold border-4 text-white hover:text-amber-400 border-gray-900 hover:border-transparent transition duration-300 bg-transparent rounded-2xl hover:bg-gray-900
     }
 }
